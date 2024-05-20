@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dao</title>
+    <!--iconos de redes-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+      
+</head>
+<body>
+    <div class="header">
+        <div class="left-section">
+          <img class="dao-logo" src="images/logo.png">
+        </div>
+        <div class="middle-section">
+          <input class="search-bar" type="text" placeholder="Ingresa aqui tu busqueda">
+          <button class="search-button">
+            Buscar
+          </button>
+          
+        </div>
+        <div class="right-section">
+          <div class="user-icon-container">
+            <img class="user-icon" src="icons/user.svg">
+          </div>
+          <div class="login-icon-container">
+            <div class="login">Bienvenid@</div>
+            <div class="login2">Iniciar Sesión</div>
+          </div>
+    
+          <div class="cart-icon-container">
+            <img class="cart-icon" src="icons/cart.svg">
+            <div class="notifications-count">3</div>
+          </div>    
+        </div>
+      </div>
+      <br>
+
+      <nav  id="barraAzul">
+      <div class="title-section">
+        <a href="#">Categorias</a>
+        <a href="#">Maternidad de bebes</a>
+        <a href="#">Adulto mayor</a>
+        <a href="#">Suplementos</a>
+        <a href="#">Cocatrizantes</a>
+      </div> 
+    </nav>
+
+    <section>
+        <div class="contactForm">
+            <div class="form">
+                <div class="texto">
+                <h2>¡Hablemos!</h2>
+                <p>Para nosotros es muy importante saber que piensa y que experiencias a obtenido con nuestros productos y servicios, su opinión es muy importante para nosotros, y el nivel de satisfacción de todos nuestros clientes, es algo por lo que trabajamos constantemente para mejorar. <br>
+                  Por favor déjanos tus datos, y cuéntanos la causa de este mensaje y con prontitud, uno de nuestros asesores lo contactara. Por lo pronto le deseamos un feliz resto de día.
+                  </p>
+                </div>
+                
+                <!--cuadros de texto para ingresar datos-->
+                <form action="">
+                  <!--<div class="inputBox">
+                    <label for="">País donde reside</label>
+                    <input type="text" placeholder="País...">
+                  </div>-->
+                  <div class="inputBox">
+                    <label for="">Nombre Completo</label>
+                    <input type="text" placeholder="Nombre...">
+                  </div>
+                  <div class="inputBox">
+                    <label for="">Cedula</label>
+                    <input type="text" placeholder="Numero de identificación...">
+                  </div>
+                  <div class="inputBox">
+                    <label for="">Correo Electrónico</label>
+                    <input type="email" placeholder="Email...">
+                  </div>
+                  <div class="inputBox">
+                    <label for="">¿De donde nos escribes?</label>
+                    <input type="text" placeholder="Ciudad...">
+                  </div>
+                  <div class="inputBox">
+                    <label for="">Nombre de tu empresa</label>
+                    <input type="text" placeholder="Empresa...">
+                  </div>
+                  <div class="inputBox">
+                    <label for="">Direccion</label>
+                    <input type="text" placeholder="Direccion...">
+                  </div>
+                  <div class="inputBox">
+                    <label for="">Teléfono de contacto</label>
+                    <input type="text" placeholder="Numero...">
+                  </div>
+                  <div class="inputBox">
+                    <label for="">Tu mensaje</label>
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Mensaje..."></textarea> 
+                  </div>
+
+                  <!--reCAPTCHA-->
+                  <!--Falta agregar el dominio en la pag de reCAPTCHA-->
+                  <div class="mb-3">
+                    <div class="g-recaptcha" data-sitekey="6LdCQdspAAAAAD7sQuNY-OMl9FYYRrwi2bv4Eb72">
+                    </div>
+                  </div>
+                  <!--boton ENVIAR MENSAJE*/-->                  
+                  <button class="send-button" onclick="openModal()">Enviar mensaje</button>
+                  <dialog class="modal" id="mainModal">
+                    <h1>Mensaje Enviado</h1>
+                    <button class="bien" onclick="closeModal()">ok</button>
+                  </dialog>
+
+
+
+                  <!--<input type="submit" value="Enviar mensaje">-->
+                </form>
+            </div>
+            
+          
+            </div>
+        </section>
+
+        <div class="redes">
+          <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>          
+        </div>
+
+
+
+        <div class="container">
+          <div class="tiendas">
+              <h2>Droguerias DAO</h2>
+              <h2>Santa Isabel</h2>
+              <h4>Dirección: Calle 3 # 28 46</h4>
+              <h4>Teléfono: 3243485689</h4>
+              <h4>Horarios</h4>
+              <h4>Lunes a Sábado (8 am – 9pm)</h4>
+              <h4>Domingos y festivos (9am – 8pm)</h4>
+          </div>
+          <div class="tiendas">
+              <h2>Droguerias DAO</h2>
+              <h2>Santa Castilla</h2>
+              <h4>Dirección: Calle 3 # 28 46</h4>
+              <h4>Teléfono: 3243485689</h4>
+              <h4>Horarios</h4>
+              <h4>Lunes a Sábado (8 am – 9pm)</h4>
+              <h4>Domingos y festivos (9am – 8pm)</h4>
+          </div>
+          <div class="tiendas">
+              <h2>Droguerias DAO</h2>
+              <h2>Santa Isabel</h2>
+              <h4>Dirección: Calle 3 # 28 46</h4>
+              <h4>Teléfono: 3243485689</h4>
+              <h4>Horarios</h4>
+              <h4>Lunes a Sábado (8 am – 9pm)</h4>
+              <h4>Domingos y festivos (9am – 8pm)</h4>
+          </div>
+          <div class="tiendas">
+              <h2>Droguerias DAO</h2>
+              <h2>Santa Castilla</h2>
+              <h4>Dirección: Calle 3 # 28 46</h4>
+              <h4>Teléfono: 3243485689</h4>
+              <h4>Horarios</h4>
+              <h4>Lunes a Sábado (8 am – 9pm)</h4>
+              <h4>Domingos y festivos (9am – 8pm)</h4>
+          </div>
+      </div> 
+
+      <script src="index.js"></script>
+ 
+</body>
+</html>  
